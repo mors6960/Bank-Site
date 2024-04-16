@@ -1,0 +1,31 @@
+<script src="https://kit.fontawesome.com/146c4de28e.js" crossorigin="anonymous"></script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Managment System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="newCap()">
+    <div class="container">
+        <div class="login">
+            <h1>Loan Managment System</h1>
+            <label for="username">Username: </label>
+            <input type="text" id="username" required>
+            <label for="password">Password: </label>
+            <input type="text" id="password" required>
+            <div class="captcha">
+                <div class="space"></div>
+                <i class="fa-solid fa-rotate" onclick="newCap()"></i>
+                <input type="text" placeholder="Captcha Code" id="captchaa">
+            </div>
+            <button id="submit" onclick="save()">Submit</button>
+        </div>
+    </div>
+</body>
+
+</html>
